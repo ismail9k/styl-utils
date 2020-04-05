@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Styling helper classes",
   "author": "Abdelrahman Ismail <dev@isamil9k.com>",
-  "main": "dist/styl-utils.css",
+  "main": "styl-utils.styl",
   "style": "dist/styl-utils.css",
   "repository": "https://github.com/ismail9k/styl-utils",
   "scripts": {
