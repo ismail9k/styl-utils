@@ -4,14 +4,6 @@
 for $breakpoint, $breakpoint-value in $screen-breakpoints
   @media screen and (min-width: $breakpoint-value)
     for $size, $margin-value in $margin-sizes
-      .ma-{$breakpoint}-{$size}
-          margin: $margin-value
-      .mt-{$breakpoint}-{$size}
-        margin-top: $margin-value
-      .mb-{$breakpoint}-{$size}
-        margin-bottom: $margin-value
-      .ml-{$breakpoint}-{$size}
-        margin-left: $margin-value
-      .mr-{$breakpoint}-{$size}
-        
-        margin-right: $margin-value
+      for $dir, $dir-value in $margin-directions
+        .{$margin-prefix}{$dir}-{$breakpoint}-{$size}
+          {$dir-value}: $margin-value

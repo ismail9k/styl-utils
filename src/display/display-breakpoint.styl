@@ -4,6 +4,6 @@
 for $breakpoint, $breakpoint-value in $screen-breakpoints
   @media screen and (min-width: $breakpoint-value)
     for $value in $display-values
-      .d-{$breakpoint}-{$value}
+      .{$display-prefix}-{$breakpoint}-{$value}
         display: $value
 

@@ -1,5 +1,5 @@
 @import 'vars.styl'
 
 for $value in $flex-values
-  .flex-{$value}
+  .{$flex-prefix}-{$value}
     flex-direction: $value

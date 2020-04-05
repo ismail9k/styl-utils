@@ -4,6 +4,6 @@
 for $breakpoint, $breakpoint-value in $screen-breakpoints
   @media screen and (min-width: $breakpoint-value)
     for $value in $flex-values
-      .flex-{$breakpoint}-{$value}
+      .{$flex-prefix}-{$breakpoint}-{$value}
         flex-direction: $value
 

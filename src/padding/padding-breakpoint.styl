@@ -4,13 +4,6 @@
 for $breakpoint, $breakpoint-value in $screen-breakpoints
   @media screen and (min-width: $breakpoint-value)
     for $size, $padding-value in $padding-sizes
-      .pa-{$breakpoint}-{$size}
-          padding: $padding-value
-      .pt-{$breakpoint}-{$size}
-        padding-top: $padding-value
-      .pb-{$breakpoint}-{$size}
-        padding-bottom: $padding-value
-      .pl-{$breakpoint}-{$size}
-        padding-left: $padding-value
-      .pr-{$breakpoint}-{$size}
-        padding-right: $padding-value
+      for $dir, $dir-value in $padding-directions
+        .{$padding-prefix}{$dir}-{$breakpoint}-{$size}
+          {$dir-value}: $padding-value
