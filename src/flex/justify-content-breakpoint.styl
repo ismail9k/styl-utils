@@ -1,0 +1,8 @@
+@import 'vars.styl'
+@import '../breakpoints/_index.styl'
+
+for $breakpoint, $breakpoint-value in $screen-breakpoints
+  @media screen and (min-width: $breakpoint-value)
+    for $justify, $value in $justify-content-values
+      .{$justify-content-prefix}-{$breakpoint}-{$justify}
+        justify-content: $value

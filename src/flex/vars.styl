@@ -1,2 +1,34 @@
 $flex-prefix ?= 'flex'
-$flex-values ?= row row-reverse column column-reverse
+$flex-values ?= {
+  'row': row,
+  'row-reverse': row-reverse,
+  'column': column,
+  'column-reverse': column-reverse,
+}
+
+$justify-content-prefix ?= 'justify'
+$justify-content-values ?= {
+  'start': flex-start,
+  'end': flex-end,
+  'center': center,
+  'between': space-between,
+  'around': space-around
+}
+
+$align-items-prefix ?= 'items'
+$align-items-values ?= {
+  'start': flex-start,
+  'end': flex-end,
+  'center': center,
+  'stretch': stretch,
+  'baseline': baseline
+}
+
+$align-self-prefix ?= 'self'
+$align-self-values ?= {
+  'start': flex-start,
+  'end': flex-end,
+  'center': center,
+  'stretch': stretch,
+  'auto': auto
+}

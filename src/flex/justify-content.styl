@@ -1,0 +1,5 @@
+@import 'vars.styl'
+
+for $justify, $value in $justify-content-values
+  .{$justify-content-prefix}-{$justify}
+    justify-content: $value
