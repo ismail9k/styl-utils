@@ -1,0 +1,55 @@
+/**
+ * media queries up mixins
+ */
+
+responsive-up(breakpoint)
+  @media screen and (min-width: breakpoint)
+    {block}
+
+xl-up()
+  +responsive-up($screen-breakpoints.xl)
+    {block}
+
+lg-up()
+  +responsive-up($screen-breakpoints.lg)
+    {block}
+
+md-up()
+  +responsive-up($screen-breakpoints.md)
+    {block}
+
+sm-up()
+  +responsive-up($screen-breakpoints.sm)
+    {block}
+
+xs-up()
+  +responsive-up($screen-breakpoints.xs)
+    {block}
+
+/**
+ * media queries down mixins
+ */
+
+responsive-down(breakpoint)
+  @media screen and (max-width: breakpoint - 0.02px)
+    {block}
+
+xl-down()
+  +responsive-down($screen-breakpoints.xl)
+    {block}
+
+lg-down()
+  +responsive-down($screen-breakpoints.lg)
+    {block}
+
+md-down()
+  +responsive-down($screen-breakpoints.md)
+    {block}
+
+sm-down()
+  +responsive-down($screen-breakpoints.sm)
+    {block}
+
+xs-down()
+  +responsive-down($screen-breakpoints.xs)
+    {block}
