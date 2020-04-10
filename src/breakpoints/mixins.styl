@@ -23,8 +23,7 @@ sm-up()
     {block}
 
 xs-up()
-  +responsive-up($screen-breakpoints.xs)
-    {block}
+  error('xl-u is not a valid mixin')
 
 /**
  * media queries down mixins
@@ -35,21 +34,20 @@ responsive-down(breakpoint)
     {block}
 
 xl-down()
+  error('xl-down is not a valid mixin')
+
+lg-down()
   +responsive-down($screen-breakpoints.xl)
     {block}
 
-lg-down()
+md-down()
   +responsive-down($screen-breakpoints.lg)
     {block}
 
-md-down()
+sm-down()
   +responsive-down($screen-breakpoints.md)
     {block}
 
-sm-down()
-  +responsive-down($screen-breakpoints.sm)
-    {block}
-
 xs-down()
-  +responsive-down($screen-breakpoints.xs)
+  +responsive-down($screen-breakpoints.sm)
     {block}
