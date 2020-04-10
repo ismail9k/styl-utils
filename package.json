@@ -1,6 +1,6 @@
 {
   "name": "styl-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Styling helper classes",
   "author": "Abdelrahman Ismail <dev@isamil9k.com>",
   "main": "styl-utils.styl",
